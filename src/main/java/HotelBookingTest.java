@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 public class HotelBookingTest {
 
-    WebDriver driver = new ChromeDriver();
+    WebDriver driver;
 
     @FindBy(linkText = "Hotels")
     private WebElement hotelLink;
@@ -25,17 +25,19 @@ public class HotelBookingTest {
     @Test
     public void shouldBeAbleToSearchForHotels() {
         setDriverPath();
+		
+	driver = new ChromeDriver();
+	PageFactory.initElements(driver, this);
 
-        driver.get("https://www.cleartrip.com/");
-        hotelLink.click();
+	driver.get("https://www.cleartrip.com/");
+	hotelLink.click();
 
-        localityTextBox.sendKeys("Indiranagar, Bangalore");
+	localityTextBox.sendKeys("Indiranagar, Bangalore");
 
-        new Select(travellerSelection).selectByVisibleText("1 room, 2 adults");
-        searchButton.click();
+	new Select(travellerSelection).selectByVisibleText("1 room, 2 adults");
+	searchButton.click();
 
-        driver.quit();
-
+	driver.quit();
     }
 
     private void setDriverPath() {
