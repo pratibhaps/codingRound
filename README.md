@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # TestVagrant hiring challenge for applicants 
 
 About the codebase:
@@ -27,3 +28,10 @@ Problem Statement
 2. Modularization & Abstraction
 3. Demonstration of OO concepts & Design Patterns
 4. Etiquette of Version control
+=======
+<<<<<<< HEAD
+# TestVagrant
+=======
+# codingRound
+>>>>>>> aa80ac60617f75003fa19fbe0a18aa0d0b7c3d4b
+>>>>>>> 6d89f7f1747467a7b8761863fd0d634f8928b39e
